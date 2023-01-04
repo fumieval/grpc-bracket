@@ -20,11 +20,15 @@ common warnings
 library
     import:           warnings
     exposed-modules:
+        GRPC.Bracket.Orphans
+        GRPC.Bracket.Logging
         GRPC.Bracket.Server
         GRPC.Bracket.Types
     -- other-modules:
     -- other-extensions:
     build-depends:    base >=4.16.0.0 && <5,
+        aeson,
+        containers,
         grpc-haskell,
         proto3-suite,
         bytestring,

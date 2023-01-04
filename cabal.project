@@ -1,0 +1,30 @@
+packages:
+    .
+
+allow-newer:
+    grpc-haskell:bytestring,
+    grpc-haskell-core:bytestring,
+    sendgrid-v3:base,
+    proto3-suite:proto3-wire,
+    proto3-suite:swagger2,
+    proto3-wire:bytestring,
+    proto3-wire:ghc-prim,
+    proto3-suite:bytestring
+
+source-repository-package
+    type: git
+    location: https://github.com/awakesecurity/gRPC-haskell
+    tag: 112777023f475ddd752c954056e679fbca0baa44
+    --sha256: sha256-0OQ3ZlZInQE0xLWPnPpGJlGmrzBeNfj2gLi5Fnu5Qxc=
+    subdir:
+        .
+        core
+
+source-repository-package
+    type: git
+    location: https://github.com/awakesecurity/proto3-suite.git
+    tag: ba15cef7ad3bfd3d46558a0c012af8d1bd7d0c96
+    --sha256: 0356z9qmqxvs769mjvsalv7bd57s2w4w5mcmg1cs12sp0xb3ygg2
+
+constraints:
+    any.proto3-suite +swagger2

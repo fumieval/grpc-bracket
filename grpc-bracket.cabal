@@ -20,6 +20,7 @@ common warnings
 library
     import:           warnings
     exposed-modules:
+        GRPC.Bracket.RecordTraversable
         GRPC.Bracket.Orphans
         GRPC.Bracket.Logging
         GRPC.Bracket.Server
@@ -35,3 +36,8 @@ library
         text
     hs-source-dirs:   src
     default-language: GHC2021
+    default-extensions:
+        DataKinds
+        GADTs
+        StrictData
+        NoFieldSelectors

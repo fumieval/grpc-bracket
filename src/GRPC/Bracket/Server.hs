@@ -1,6 +1,3 @@
-{-# LANGUAGE DataKinds #-}
-{-# LANGUAGE GADTs #-}
-
 module GRPC.Bracket.Server
   ( NormalHandler
   , normalHandler

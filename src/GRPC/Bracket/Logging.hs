@@ -8,6 +8,7 @@ module GRPC.Bracket.Logging
   ( CallLog(..)
   , serviceLogWith
   , serviceLogJSON
+  , HasCallLog(..)
   ) where
 
 import Data.Aeson qualified as J
